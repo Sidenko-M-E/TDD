@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace TiOPO_lab3_app
 {
     public class Quiz
     {
-        public List<Question> GetQuestions()
+        public List<Question>? GetQuestions()
         {
-            //TODO: Add logic
-            return null;
+            try
+            {
+                StreamReader reader = new("data.json");
+                var json = reader.ReadToEnd();
+                return JsonConvert.DeserializeObject<List<Question>>(json);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public void Start()
