@@ -36,5 +36,13 @@ namespace TiOPO_lab3_tests
             var method = t.GetMethod("RateAnswer");
             Assert.IsNotNull(method);
         }
+
+        [TestMethod]
+        public void CorrectAnswerNumber_PropertyExists()
+        {
+            Type t = typeof(Question);
+            var method = t.GetProperty("CorrectAnswerNumber");
+            Assert.IsNotNull(method);
+        }
     }
 }
