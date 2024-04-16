@@ -17,6 +17,7 @@ namespace TiOPO_lab3_app
             {
                 StreamReader reader = new("data.json");
                 var json = reader.ReadToEnd();
+                reader.Close();
                 return JsonConvert.DeserializeObject<List<Question>>(json);
             }
             catch
