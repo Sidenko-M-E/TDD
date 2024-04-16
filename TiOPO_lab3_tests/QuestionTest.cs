@@ -28,5 +28,13 @@ namespace TiOPO_lab3_tests
             var method = t.GetMethod("RequestAnswer");
             Assert.IsNotNull(method);
         }
+
+        [TestMethod]
+        public void RateAnswerMethodExists()
+        {
+            Type t = typeof(Question);
+            var method = t.GetMethod("RateAnswer");
+            Assert.IsNotNull(method);
+        }
     }
 }
