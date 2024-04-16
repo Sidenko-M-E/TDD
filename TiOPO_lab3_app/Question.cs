@@ -8,6 +8,8 @@ namespace TiOPO_lab3_app
 {
     public class Question
     {
+        public int CorrectAnswerNumber {  get; set; }
+
         public void Show()
         {
             //TODO: Add Logic    
