@@ -24,12 +24,16 @@ namespace TiOPO_lab3_app
 
                 if (Answers == null)
                     return false;
+
+                if (Answers.Count == 0) 
+                    return false;
+
+                //TODO: Add logic
             }
             catch
             {
                 return false;
             }
-
 
             return true;
         }
