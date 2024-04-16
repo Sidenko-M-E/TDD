@@ -57,6 +57,17 @@ namespace TiOPO_lab3_app
                 return -2;
             }
 
+            Score = 0;
+            RemainedAnswersNumber = 5;
+            Console.WriteLine("В этой игре вам предстоит");
+            Console.WriteLine("угадывать паттерн проектирования ПО по его коду на языке C++");
+            Console.WriteLine("Удачи!\n");
+            while (RemainedAnswersNumber > 0 && Questions.Count > 0)
+            {
+                AskQuestion();
+            }
+            Console.WriteLine($"Игра завершилась со счётом {Score}/{5 - RemainedAnswersNumber}");
+
             return 0;
         }
     }
