@@ -25,9 +25,9 @@ namespace TiOPO_lab3_app
             }
         }
 
-        public void Start()
+        public int Start()
         {
-
+            return 0;
         }
     }
 }
