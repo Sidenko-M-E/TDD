@@ -8,5 +8,8 @@ namespace TiOPO_lab3_app
 {
     public class Question
     {
+        public void Show()
+        {
+        }
     }
 }
