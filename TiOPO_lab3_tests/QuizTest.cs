@@ -51,5 +51,22 @@ namespace TiOPO_lab3_tests
             Quiz quiz = new();
             Assert.AreEqual(-1, quiz.Start());
         }
+
+        [TestMethod]
+        public void StartMethod_Error_NotEnoughQuestions()
+        {
+            List<Question> list = 
+            [
+                new Question(),
+                new Question(),
+
+            ];
+
+            StreamWriter streamWriter = new StreamWriter("data.json");
+            streamWriter.WriteLine("");
+
+            Quiz quiz = new();
+            Assert.AreEqual(-2, quiz.Start());
+        }
     }
 }
