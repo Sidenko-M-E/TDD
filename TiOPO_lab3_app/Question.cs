@@ -12,9 +12,10 @@ namespace TiOPO_lab3_app
         public List<string> Answers { get; set; }
         public int CorrectAnswerNumber {  get; set; }
 
-        public void Show()
+        public bool Show()
         {
-            //TODO: Add Logic    
+            //TODO: Add Logic
+            return false;
         }
 
         public int RequestAnswer() 
