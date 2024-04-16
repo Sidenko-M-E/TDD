@@ -28,6 +28,11 @@ namespace TiOPO_lab3_app
             }
         }
 
+        public void AskQuestion()
+        {
+            //TODO: Add logic
+        }
+
         public int Start()
         {
             Questions = GetQuestions();
