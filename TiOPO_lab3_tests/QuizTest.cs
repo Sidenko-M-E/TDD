@@ -59,6 +59,15 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void AskQuestionMethod_DeleteQuestionAfterCall()
+        {
+            Quiz quiz = new Quiz() { Score = 0, Questions = [new Question() {}], RemainedAnswersNumber = 1 };
+            quiz.AskQuestion();
+
+            Assert.AreEqual(0, quiz.Questions.Count);
+        }
+
+        [TestMethod]
         public void StartMethod_Exists()
         {
             Type type = typeof(Quiz);
