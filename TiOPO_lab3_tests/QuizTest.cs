@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,6 +40,16 @@ namespace TiOPO_lab3_tests
             Type type = typeof(Quiz);
             var method = type.GetMethod("Start");
             Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
+        public void StartMethod_Error_EmptyQuestions()
+        {
+            StreamWriter streamWriter = new StreamWriter("data.json");
+            streamWriter.WriteLine("");
+
+            Quiz quiz = new();
+            Assert.Equals(-1, quiz.Start());
         }
     }
 }
