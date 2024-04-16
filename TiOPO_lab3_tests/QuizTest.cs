@@ -35,6 +35,14 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void RemainedAnswersNumber_PropertyExists()
+        {
+            Type t = typeof(Quiz);
+            var method = t.GetProperty("RemainedAnswersNumber");
+            Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
         public void GetQuestionsMethod_Exists()
         {
             Type type = typeof(Quiz);
