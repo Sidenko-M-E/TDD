@@ -18,6 +18,15 @@ namespace TiOPO_lab3_app
 
             if (SourceFileName == null)
                 return false;
+            try
+            {
+                var sr = new StreamReader($"{SourceFileName}");
+            }
+            catch
+            {
+                return false;
+            }
+
 
             return true;
         }
