@@ -45,8 +45,10 @@ namespace TiOPO_lab3_app
 
         public int RequestAnswer() 
         {
-            //TODO: Add logic
-            return 1;
+            if (int.TryParse(Console.ReadLine(), System.Globalization.NumberStyles.Number, null, out int anwer_number))
+                return anwer_number;
+            else
+                return -1;
         }
 
         public int RateAnswer(int answerNumber)
