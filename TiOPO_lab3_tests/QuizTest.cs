@@ -51,6 +51,14 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void AskQuestionMethod_Exists()
+        {
+            Type type = typeof(Quiz);
+            var method = type.GetMethod("AskQuestion");
+            Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
         public void StartMethod_Exists()
         {
             Type type = typeof(Quiz);
