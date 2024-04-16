@@ -12,5 +12,11 @@ namespace TiOPO_lab3_app
         {
             //TODO: Add Logic    
         }
+
+        public int RequestAnswer() 
+        {
+            //TODO: Add logic
+            return 1;
+        }
     }
 }
