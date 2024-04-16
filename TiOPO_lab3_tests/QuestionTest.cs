@@ -22,10 +22,10 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
-        public void Description_PropertyExists()
+        public void SourceFileName_PropertyExists()
         {
             Type t = typeof(Question);
-            var method = t.GetProperty("Description");
+            var method = t.GetProperty("SourceFileName");
             Assert.IsNotNull(method);
         }
 
