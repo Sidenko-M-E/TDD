@@ -10,6 +10,7 @@ namespace TiOPO_lab3_app
     public class Quiz
     {
         public List<Question>? Questions {  get; set; }
+        public int Score { get; set; }
 
         public List<Question>? GetQuestions()
         {
