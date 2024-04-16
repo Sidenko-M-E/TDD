@@ -53,6 +53,13 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void ShowMethod_Error_CannotOpenSourceFile()
+        {
+            Question question = new Question() { SourceFileName = "wrong_file", Answers = ["1", "2"] };
+            Assert.AreEqual(false, question.Show());
+        }
+
+        [TestMethod]
         public void RequestAnswerMethodExists()
         {
             Type t = typeof(Question);

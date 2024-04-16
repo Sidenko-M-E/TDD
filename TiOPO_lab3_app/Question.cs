@@ -14,6 +14,8 @@ namespace TiOPO_lab3_app
 
         public bool Show()
         {
+            //TODO: Text output for user
+
             if (SourceFileName == null)
                 return false;
 
