@@ -11,6 +11,7 @@ namespace TiOPO_lab3_app
     {
         public List<Question>? Questions {  get; set; }
         public int Score { get; set; }
+        public int RemainedAnswersNumber { get; set; }
 
         public List<Question>? GetQuestions()
         {
