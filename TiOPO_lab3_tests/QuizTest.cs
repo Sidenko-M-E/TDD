@@ -72,8 +72,15 @@ namespace TiOPO_lab3_tests
         {
             Quiz quiz = new Quiz() { Score = 0, Questions = [new Question() { }], RemainedAnswersNumber = 1 };
             quiz.AskQuestion();
-
             Assert.AreEqual(1, quiz.RemainedAnswersNumber);
+        }
+
+        [TestMethod]
+        public void AskQuestionMethod_WillChangeRemainedAnswersNumberAfterSuccessfullCall()
+        {
+            Quiz quiz = new Quiz() { Score = 0, Questions = [new Question() { CorrectAnswerNumber = 1, Answers = ["",""], SourceFileName="existed_file.txt" }], RemainedAnswersNumber = 1 };
+            quiz.AskQuestion();
+            Assert.AreEqual(0, quiz.RemainedAnswersNumber);
         }
 
         [TestMethod]
