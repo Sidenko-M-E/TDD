@@ -36,6 +36,12 @@ namespace TiOPO_lab3_app
                 return -1;
             }
 
+            if (Questions.Count < 5)
+            {
+                Console.WriteLine("Ошибка загрузки вопросов.");
+                return -2;
+            }
+
             return 0;
         }
     }
