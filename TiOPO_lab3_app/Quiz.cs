@@ -8,5 +8,10 @@ namespace TiOPO_lab3_app
 {
     public class Quiz
     {
+        public List<Question> GetQuestions()
+        {
+            //TODO: Add logic
+            return null;
+        }
     }
 }
