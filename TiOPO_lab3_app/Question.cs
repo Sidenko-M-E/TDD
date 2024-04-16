@@ -21,6 +21,9 @@ namespace TiOPO_lab3_app
             try
             {
                 var sr = new StreamReader($"{SourceFileName}");
+
+                if (Answers == null)
+                    return false;
             }
             catch
             {
