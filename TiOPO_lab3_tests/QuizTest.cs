@@ -49,7 +49,7 @@ namespace TiOPO_lab3_tests
             streamWriter.WriteLine("");
 
             Quiz quiz = new();
-            Assert.Equals(-1, quiz.Start());
+            Assert.AreEqual(-1, quiz.Start());
         }
     }
 }
