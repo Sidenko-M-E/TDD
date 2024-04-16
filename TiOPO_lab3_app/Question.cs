@@ -14,10 +14,9 @@ namespace TiOPO_lab3_app
 
         public bool Show()
         {
-            //TODO: Text output for user
-
             if (SourceFileName == null)
                 return false;
+
             try
             {
                 var sr = new StreamReader($"{SourceFileName}");
@@ -28,7 +27,13 @@ namespace TiOPO_lab3_app
                 if (Answers.Count == 0) 
                     return false;
 
-                //TODO: Add logic
+                Console.WriteLine("Код с использованием паттерна.");
+                Console.WriteLine(sr.ReadToEnd());
+                Console.WriteLine();
+                for (int i = 0; i < Answers.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}) {Answers[i]}");
+                }
             }
             catch
             {
