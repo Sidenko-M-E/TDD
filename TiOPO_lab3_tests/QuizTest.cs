@@ -27,6 +27,14 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void Score_PropertyExists()
+        {
+            Type t = typeof(Quiz);
+            var method = t.GetProperty("Score");
+            Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
         public void GetQuestionsMethod_Exists()
         {
             Type type = typeof(Quiz);
