@@ -30,11 +30,15 @@ namespace TiOPO_lab3_app
 
         public void AskQuestion()
         {
-            //TODO: Add question selection
+            Random rnd = new();
+            int QuestionIndex = rnd.Next(Questions.Count);
 
-            if (Questions[0].Show())
+            if (Questions[QuestionIndex].Show())
+            {
                 RemainedAnswersNumber--;
-            Questions.RemoveAt(0);
+                Score += Questions[QuestionIndex].RateAnswer(Questions[QuestionIndex].RequestAnswer());
+            }    
+            Questions.RemoveAt(QuestionIndex);
         }
 
         public int Start()
