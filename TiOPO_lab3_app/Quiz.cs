@@ -9,6 +9,8 @@ namespace TiOPO_lab3_app
 {
     public class Quiz
     {
+        public List<Question>? Questions {  get; set; }
+
         public List<Question>? GetQuestions()
         {
             try
