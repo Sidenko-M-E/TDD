@@ -23,8 +23,12 @@ namespace TiOPO_lab3_app
 
         public int RateAnswer(int answerNumber)
         {
-            //TODO: Add logic
-            return 0;
+            //TODO: Text output for user
+
+            if (answerNumber == CorrectAnswerNumber)
+                return 1;
+            else
+                return 0;
         }
     }
 }
