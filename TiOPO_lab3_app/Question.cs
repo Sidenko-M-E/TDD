@@ -51,12 +51,17 @@ namespace TiOPO_lab3_app
 
         public int RateAnswer(int answerNumber)
         {
-            //TODO: Text output for user
-
             if (answerNumber == CorrectAnswerNumber)
+            {
+                Console.WriteLine("Вы ответили верно!\n");
                 return 1;
+            }
             else
+            {
+                Console.WriteLine("Вы ответили НЕ верно!");
+                Console.WriteLine($"Правильный ответ - {CorrectAnswerNumber})\n");
                 return 0;
+            }
         }
     }
 }
