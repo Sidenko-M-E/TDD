@@ -27,6 +27,14 @@ namespace TiOPO_lab3_app
 
         public int Start()
         {
+            Questions = GetQuestions();
+
+            if (Questions is null)
+            {
+                Console.WriteLine("Ошибка загрузки вопросов.");
+                return -1;
+            }
+
             return 0;
         }
     }
