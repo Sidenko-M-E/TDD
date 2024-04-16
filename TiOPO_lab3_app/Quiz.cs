@@ -30,7 +30,10 @@ namespace TiOPO_lab3_app
 
         public void AskQuestion()
         {
-            //TODO: Add logic
+            //TODO: Add question selection
+
+            if (Questions[0].Show())
+                RemainedAnswersNumber--;
             Questions.RemoveAt(0);
         }
 
