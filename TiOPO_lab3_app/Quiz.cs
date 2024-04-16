@@ -13,5 +13,10 @@ namespace TiOPO_lab3_app
             //TODO: Add logic
             return null;
         }
+
+        public void Start()
+        {
+
+        }
     }
 }
