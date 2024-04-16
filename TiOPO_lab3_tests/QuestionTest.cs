@@ -60,6 +60,13 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void ShowMethod_Error_AnswersNotStated()
+        {
+            Question question = new Question() { SourceFileName = "existed_file.txt", Answers = null};
+            Assert.AreEqual(false, question.Show());
+        }
+
+        [TestMethod]
         public void RequestAnswerMethodExists()
         {
             Type t = typeof(Question);
