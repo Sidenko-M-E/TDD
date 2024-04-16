@@ -68,6 +68,15 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void AskQuestionMethod_WontChangeRemainedAnswersNumberAfterFalseCall()
+        {
+            Quiz quiz = new Quiz() { Score = 0, Questions = [new Question() { }], RemainedAnswersNumber = 1 };
+            quiz.AskQuestion();
+
+            Assert.AreEqual(1, quiz.RemainedAnswersNumber);
+        }
+
+        [TestMethod]
         public void StartMethod_Exists()
         {
             Type type = typeof(Quiz);
