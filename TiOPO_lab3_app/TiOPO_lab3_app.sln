@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiOPO_lab3_app", "TiOPO_lab3_app.csproj", "{F390DF02-4905-45CF-AE65-4551091DE63A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiOPO_lab3_tests", "..\TiOPO_lab3_tests\TiOPO_lab3_tests.csproj", "{634BFC7E-B6A2-470E-80D4-2B0ED2779DDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F390DF02-4905-45CF-AE65-4551091DE63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F390DF02-4905-45CF-AE65-4551091DE63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F390DF02-4905-45CF-AE65-4551091DE63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F390DF02-4905-45CF-AE65-4551091DE63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634BFC7E-B6A2-470E-80D4-2B0ED2779DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634BFC7E-B6A2-470E-80D4-2B0ED2779DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634BFC7E-B6A2-470E-80D4-2B0ED2779DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634BFC7E-B6A2-470E-80D4-2B0ED2779DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {050C4659-5C3F-436B-80DC-5EF70DE6FE73}
+	EndGlobalSection
+EndGlobal
