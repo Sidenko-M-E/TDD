@@ -14,7 +14,9 @@ namespace TiOPO_lab3_app
 
         public bool Show()
         {
-            //TODO: Add Logic
+            if (SourceFileName == null)
+                return false;
+
             return true;
         }
 
