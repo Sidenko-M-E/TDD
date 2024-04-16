@@ -20,5 +20,13 @@ namespace TiOPO_lab3_tests
             var method = t.GetMethod("Show");
             Assert.IsNotNull(method);
         }
+
+        [TestMethod]
+        public void RequestAnswerMethodExists()
+        {
+            Type t = typeof(Question);
+            var method = t.GetMethod("RequestAnswer");
+            Assert.IsNotNull(method);
+        }
     }
 }
