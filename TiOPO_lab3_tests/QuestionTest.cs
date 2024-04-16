@@ -53,5 +53,14 @@ namespace TiOPO_lab3_tests
             Question question = new Question() { CorrectAnswerNumber = CorrectAnswerNumber };
             Assert.AreEqual(0, question.RateAnswer(5));
         }
+
+        [TestMethod]
+        public void RateAnswerMethod_RatesCorrectlyRightAnswer()
+        {
+            int CorrectAnswerNumber = 1;
+
+            Question question = new Question() { CorrectAnswerNumber = CorrectAnswerNumber };
+            Assert.AreEqual(1, question.RateAnswer(1));
+        }
     }
 }
