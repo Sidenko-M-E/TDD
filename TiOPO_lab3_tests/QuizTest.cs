@@ -24,5 +24,13 @@ namespace TiOPO_lab3_tests
             var method = type.GetMethod("GetQuestions");
             Assert.IsNotNull(method);
         }
+
+        [TestMethod]
+        public void StartMethod_Exists()
+        {
+            Type type = typeof(Quiz);
+            var method = type.GetMethod("Start");
+            Assert.IsNotNull(method);
+        }
     }
 }
