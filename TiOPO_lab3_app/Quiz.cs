@@ -31,6 +31,7 @@ namespace TiOPO_lab3_app
         public void AskQuestion()
         {
             //TODO: Add logic
+            Questions.RemoveAt(0);
         }
 
         public int Start()
