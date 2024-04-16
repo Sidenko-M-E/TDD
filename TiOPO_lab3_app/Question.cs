@@ -15,7 +15,7 @@ namespace TiOPO_lab3_app
         public bool Show()
         {
             //TODO: Add Logic
-            return false;
+            return true;
         }
 
         public int RequestAnswer() 
