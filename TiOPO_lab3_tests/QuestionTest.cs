@@ -14,6 +14,30 @@ namespace TiOPO_lab3_tests
         }
 
         [TestMethod]
+        public void CorrectAnswerNumber_PropertyExists()
+        {
+            Type t = typeof(Question);
+            var method = t.GetProperty("CorrectAnswerNumber");
+            Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
+        public void Description_PropertyExists()
+        {
+            Type t = typeof(Question);
+            var method = t.GetProperty("Description");
+            Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
+        public void Answers_PropertyExists()
+        {
+            Type t = typeof(Question);
+            var method = t.GetProperty("Answers");
+            Assert.IsNotNull(method);
+        }
+
+        [TestMethod]
         public void ShowMethodExists()
         {
             Type t = typeof(Question);
@@ -34,14 +58,6 @@ namespace TiOPO_lab3_tests
         {
             Type t = typeof(Question);
             var method = t.GetMethod("RateAnswer");
-            Assert.IsNotNull(method);
-        }
-
-        [TestMethod]
-        public void CorrectAnswerNumber_PropertyExists()
-        {
-            Type t = typeof(Question);
-            var method = t.GetProperty("CorrectAnswerNumber");
             Assert.IsNotNull(method);
         }
 
