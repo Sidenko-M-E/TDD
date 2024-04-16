@@ -18,5 +18,11 @@ namespace TiOPO_lab3_app
             //TODO: Add logic
             return 1;
         }
+
+        public int RateAnswer(int answerNumber)
+        {
+            //TODO: Add logic
+            return 1;
+        }
     }
 }
