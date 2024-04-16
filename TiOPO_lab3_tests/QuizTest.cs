@@ -47,6 +47,7 @@ namespace TiOPO_lab3_tests
         {
             StreamWriter streamWriter = new StreamWriter("data.json");
             streamWriter.WriteLine("");
+            streamWriter.Close();
 
             Quiz quiz = new();
             Assert.AreEqual(-1, quiz.Start());
@@ -61,9 +62,9 @@ namespace TiOPO_lab3_tests
                 new Question(),
 
             ];
-
             StreamWriter streamWriter = new StreamWriter("data.json");
-            streamWriter.WriteLine("");
+            streamWriter.WriteLine(JsonConvert.SerializeObject(list));
+            streamWriter.Close();
 
             Quiz quiz = new();
             Assert.AreEqual(-2, quiz.Start());
